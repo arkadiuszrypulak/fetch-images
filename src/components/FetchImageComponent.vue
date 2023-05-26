@@ -48,7 +48,7 @@ export default {
 }
 
 .image-container {
-  width: calc(50% - 20px);
+  width: 100%;
   margin: 10px;
   display: flex;
   justify-content: center;
@@ -62,7 +62,7 @@ export default {
 
 .image {
   width: 100%;
-  max-width: 300px;
+  max-width: 500px;
   border-radius: 6px;
   transition: 0.3s ease-in;
 }
@@ -73,6 +73,23 @@ export default {
 
 .author {
   text-align: center;
-  margin-top: 5px;
+  margin-top: 1rem;
+}
+
+@media (min-width: 576px) {
+  .image-container {
+    width: calc(50% - 20px);
+  }
+}
+@media (min-width: 992px) {
+  .image-container {
+    width: calc(33.3% - 20px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .image-container {
+    width: calc(25% - 20px);
+  }
 }
 </style>
